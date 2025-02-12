@@ -18,7 +18,9 @@
 buildscript {
     repositories {
         google()
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots" } // robolectric
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/spring/' }
+//        maven { url "https://oss.sonatype.org/content/repositories/snapshots" } // robolectric
         mavenCentral()
         maven { url 'https://jitpack.io' }
     }
@@ -39,6 +41,8 @@ ext {
 allprojects {
     repositories {
         google()
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/spring/' }
         mavenCentral()
         maven { url 'https://jitpack.io' }
     }

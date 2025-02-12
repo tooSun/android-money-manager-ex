@@ -26,30 +26,39 @@
         android:name="android.hardware.telephony"
         android:required="false" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许应用程序访问网络 -->
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
+    <!-- 允许应用程序查看所有网络的状态 -->
+<!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!-- 允许应用程序控制振动器 -->
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <!-- sync authenticator -->
+    <!-- 允许应用程序在系统完成启动后接收一个广播 -->
+<!--    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
+    <!-- 同步身份验证器 -->
     <!--<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />-->
-    <!-- sync adapter -->
+    <!-- 同步适配器 -->
     <!--<uses-permission android:name="android.permission.READ_SYNC_STATS" />-->
     <!--<uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />-->
     <!--<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />-->
 
-    <!-- SMS Interface -->
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 短信接口 -->
+    <!-- 允许应用程序接收短信 -->
+<!--    <uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <!-- 允许应用读取收到的短信 -->
+<!--    <uses-permission android:name="android.permission.READ_SMS" />-->
 
-    <!-- Fingerprint Interface -->
+    <!-- 指纹接口 -->
+    <!-- 允许应用使用生物识别硬件进行身份验证 -->
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
-    <!-- for compatibility of Job Scheduler with Android versions prior to 8. -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 为兼容8之前的Android版本的任务调度程序 -->
+    <!-- 允许应用程序在手机休眠时保持CPU运行 -->
+<!--    <uses-permission android:name="android.permission.WAKE_LOCK" />-->
 
-    <!-- new post notification management -->
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    
+    <!-- 新的发布通知管理 -->
+    <!-- 允许应用程序发布通知 -->
+<!--    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />-->
+
     <supports-screens
         android:largeScreens="true"
         android:xlargeScreens="true" />
